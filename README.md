@@ -21,7 +21,7 @@ Ensure you have **Node.js** installed on your system.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/IshaMahadev/cute-photobooth.git](https://github.com/IshaMahadev/cute-photobooth.git)
+    git clone [https://github.com/IshaMahadev/cute-photobooth.git](https://github.com/ArnavXT/DIY-photobooth.git)
     cd cute-photobooth
     ```
 
