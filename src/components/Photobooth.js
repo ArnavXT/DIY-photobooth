@@ -101,7 +101,7 @@ export default function PhotoBooth() {
     useEffect(drawCanvas, [photos, stickers, selectedSticker, photoCount]);
 
     const handleBack = () => {
-        if (mode == "decorate") {
+        if (mode === "decorate") {
             setMode("photo");
             setCanTakePhoto(false);
             setStickers([]);
@@ -291,7 +291,7 @@ export default function PhotoBooth() {
                 selectedSticker != null &&
                 mode === "decorate"
             ){
-                setStickers(s => s.filter((_,i) => i != selectedSticker));
+                setStickers(s => s.filter((_,i) => i !== selectedSticker));
                 setSelectedSticker(null);
             }
         };
@@ -521,7 +521,6 @@ const buttonStyle = {
     background: "white"
 };
 
-const row = { display: "flex", gap: 40, alignItems: "flex-start" };
 const frameThumb = {
     width: 180,
     cursor: "pointer",
